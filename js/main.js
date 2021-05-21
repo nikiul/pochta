@@ -1,1 +1,25 @@
-<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab11d59fb52cd5de732848e1d93535a9b56029730524213a13dc0d122253afa3b&amp;width=670&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+function handleFileSelectSingle(evt) {
+    var file = evt.target.files;
+
+    var f = file[0]
+
+        if (!f.type.match('image.*')) {
+        alert("Только изображения....");
+        }
+
+        var reader = new FileReader();
+
+        reader.onload = (function(theFile) {
+        return function(e) {
+            var span = document.createElement('span');
+            span.innerHTML = ['<img class="img-thumbnail" src="', e.target.result,
+                            '" title="', escape(theFile.name), '"/>'].join('');
+            document.getElementById('output').innerHTML = "";
+            document.getElementById('output').insertBefore(span, null);
+        };
+        })(f);
+
+        reader.readAsDataURL(f);
+    }
+
+document.getElementById('file').addEventListener('change', handleFileSelectSingle, false);
