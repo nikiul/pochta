@@ -576,4 +576,133 @@ body {
   outline: none;
   cursor: pointer;
 }
+.autoriza {
+  height: 100vh;
+  background-image: url("../img/autoriza.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.autoriza__content {
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+.autoriza__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 45px;
+  width: 700px;
+  background-color: #fff;
+  border-radius: 30px;
+}
+.autoriza__title {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 60px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #0648cc;
+}
+.autoriza__subtitle {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #557bc6;
+}
+.login {
+  width: 60%;
+  margin-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.login label {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #557bc6;
+}
+.login input {
+  height: 60px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #557bc6;
+  outline: none;
+}
+.pass {
+  width: 60%;
+  margin-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pass label {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #557bc6;
+}
+.pass input {
+  height: 60px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #557bc6;
+  outline: none;
+}
+.reg__btn,
+.recovery__btn {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #557bc6;
+  text-decoration: none;
+}
 /*# sourceMappingURL=main.css.map */
